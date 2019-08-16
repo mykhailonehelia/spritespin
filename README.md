@@ -5,7 +5,7 @@
 - If **panHandler** set to Hammer, include  [ hammer.js](https://github.com/hammerjs/hammer.js/tree/master/ " hammer.js"). It's NOT included.
 
 
-#Options
+### Options
 
 - **container** - DOM element
 
@@ -43,14 +43,14 @@
     	"digits": [0, 22, 52, 72, 103]
     	...
 
-#Events
+### Events
 - `load` - function() {}
 - `panstart` - function(**frame**) {}
 - `panend` - function(**frame**) {}
 - `pan` - function(**frame**) {}
 - `framechange` - function(**frame**) {}
 
-#Example
+### Example
 
 ```javascript
     var spin = new SpriteSpin({
@@ -87,4 +87,4 @@
 
 
 
-###End
+### End
