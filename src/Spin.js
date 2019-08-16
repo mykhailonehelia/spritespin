@@ -13,7 +13,7 @@ class Spin {
     this.framesCount = this.options.frames[1] - this.options.frames[0] + 1;
     this.anglePerFrame = 2 * Math.PI / (this.options.frames[1] + 1 - this.options.frames[0]);
 
-
+    this.options.sensitivity = this.options.sensitivity ? this.options.sensitivity : 1;
     this.load = new Event(this);
     this.framechange = new Event(this);
     this.panstart = new Event(this);
