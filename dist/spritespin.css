@@ -1,0 +1,23 @@
+#spin {
+  width: 100%;
+  height: 100vh;
+}
+
+.spin {
+  position: relative;
+}
+
+.spin-img {
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.spin-img.active {
+  opacity: 1;
+  z-index: 10;
+}
