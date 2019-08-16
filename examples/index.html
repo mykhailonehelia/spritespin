@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link href="../dist/spritespin.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div id="spin" class="spin"></div>
+
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <script src="../dist/spritespin.js"></script>
+
+  <script>
+    var spin = new SpriteSpin({
+      "container": document.getElementById("spin"),
+      // "panHandler": "Hammer", //Hammer or undefined fo native code
+      "path": "./examples/data/RcH_png_00{frame}.jpg",
+      "digits": 3,
+      "frames": [0, 110],
+      "sensitivity": 1,
+      "anchors": [0, 22, 52, 72, 103]
+    });
+
+    spin.on('load', function() {
+      console.log("Loaded");
+    });
+
+    spin.on('panstart', function(frame) {
+      console.log("panstart", frame);
+    });
+
+    spin.on('pan', function(frame) {
+      console.log("pan", frame);
+    });
+
+    spin.on('panend', function(frame) {
+      console.log("panend", frame);
+    });
+
+    spin.on('framechange', function(frame) {
+      console.log("framechange", frame);
+    });
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+</body>
+
+</html>
