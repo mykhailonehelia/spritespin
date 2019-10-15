@@ -1,4 +1,4 @@
-# SpriteSpin
+# SpriteSpin JS - Pure JS Sprite Spin
 
 - Pure JS spritespin library.
 - You can use native events `mousedown`, `mousemove`, `mouseup` and `touchstart`, `touchmove`, `touchend` OR [ hammer.js](https://github.com/hammerjs/hammer.js/tree/master/ " hammer.js") `pan` event. To use native [ hammer.js](https://github.com/hammerjs/hammer.js/tree/master/ " hammer.js") set **panHandler** option to Hammer.
